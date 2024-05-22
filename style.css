@@ -1,0 +1,38 @@
+body{
+    margin : 0;
+    padding : 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(48, 5, 5);
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+
+p{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    page-break-inside: auto;
+}
+
+.head-tag{
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: brown;
+}
+
+.head-tag a{
+    font-family:  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(9, 1, 1);
+    border: 3px solid rgb(38, 8, 126);
+    padding: 3px;
+    margin-right: 8px;
+    font-style: italic;
+    
+}
