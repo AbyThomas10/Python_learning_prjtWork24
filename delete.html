@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delete The Staff</title>
+    <link rel="stylesheet" href="../static/css/emp.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body background="../static/images/img3.jpg" style="padding-left: 20px;">
+    <div class="head-tag">
+        <a href="backtohome">Back To Home</a></div>
+    
+    <h1> Delete The Staff</h1>
+    <div></div>
+    <table border="1px" style="padding-left: 20px;">
+        <thead><tr>
+            
+            <th>Staff Name</th>
+            <th>Staff Address</th>
+            <th>Staff Salary</th>
+            <th>Staff Dept</th>
+            <th>Staff Id</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>
+                    <form action="delete" method="post">
+                        <input type="hidden" name="id" value="{{i[4]}}">
+                        <input type="hidden" name="name" value="{{i[0]}}">
+                        <button type="submit">Delete</button>
+                    </form></td>
+                
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>{{msg}}</p>
+</div>
+</body>
+</html>

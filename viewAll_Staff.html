@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Employee Details</title>
+    <link rel="stylesheet" href="../static/css/emp.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body background="../static/images/img3.jpg" style="padding-left: 20px;">
+    <img src="../static/images/img1.jpg" alt="Noimage" width="10%" height="5%" style="padding-left: 5x; padding-top: 5px;">
+    <div class="head-tag">
+        <a href="backtohome">Back To Home</a></div>
+    <h1>Colleage Staff  Details</h1>
+    <table border="2px">
+        <thead><tr>
+            
+            <th>Staff Name</th>
+            <th>Staff Address</th>
+            <th>Staff Salary</th>
+            <th>Department</th>
+            <th>Staff Id</th></tr>
+        </thead>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/emp.css">
+</head>
+<body background="../static/images/img2.jpg">
+    <img src="../static/images/img1.jpg" alt="Noimage" width="10%" height="10%" style="padding-left: 10px; padding-top: 10px;">
+    <div class="mycontainer">
+
+        <div>
+          <h2></h2>
+          
+        </div>
+        
+        <div style="background-color:#ffffff;">
+            <h1>Login To Proceed</h1>
+            <form action="loginhome" method="post">
+                <label for="uname">Username : </label>
+                <input type="text" name ="user"><br>
+                <label for="pass">Password : </label>
+                <input type="password" name="pass" ><br>
+                <input type="radio" name="type" id="admin" value="admin"><label for="Admin">Admin</label>
+                <input type="radio" name="type" id="user" value="user"><label for="Admin">user</label><br>
+                <button type="submit">Login</button>
+                {{msg}}
+            </form>
+        </div>
+        
+        <div >
+         
+        </div>
+      
+      </div>
+    
+    </form>
+    </div>
+</body>
+</html>

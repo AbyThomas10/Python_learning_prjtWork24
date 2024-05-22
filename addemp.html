@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Colleage Staff</title>
+    <link rel="stylesheet" href="../static/css/emp.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body background="../static/images/img3.jpg"> 
+    <div>
+        <img src="../static/images/img1.jpg" alt="Noimage" width="10%" height="10%" style="padding-left: 10px; padding-top: 10px;">
+    <div class="head-tag">
+        <a href="backtohome">Back To Home</a></div>
+    <div style="padding-left: 70px; ">
+        <h1>Add New Staff</h1></div>
+    <div class="mycontainer">
+        
+    <div style="background-color:#ffffff;">
+    <form action="add_emp" method="post">
+      <table style="border-radius: 0%;">
+        <tr>
+            <td>
+                <label for="name">Staff Name </label>
+            </td>
+            <td>
+                <input type="text" name="name"></td>
+        </tr>
+        <tr><td><label for="address">Staff Address </label></td>
+        <td><input type="text" name="address"></td></tr>
+        <tr><td><label for="salary">Salary: </label></td>
+        <td><input type="number" name ="salary"></td></tr>
+        <tr><td><label for="dept">Department</label></td>
+        <td><input type="text" name="dept"><br></td></tr>
+        <tr><td><label for="id">Staff Id: </label></td>
+        <td><input type="number" name ="id"></td></tr>
+        <tr><td><button type="submit">Add New Staff</button></td>
+        <td>{{msg}}</td></tr></table>
+        
+        
+        
+        </form></div>
+        <div>
+         
+        </div></div></div>
+</body>
+</html>

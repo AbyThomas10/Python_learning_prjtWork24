@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Pagels</title>
+    <link rel="stylesheet" href="../static/css/emp.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body background="../static/images/img3.jpg" style="padding-left: 20px;">
+    <div class="head-tag">
+        <a href="backtohome">Back To Home</a></div>
+    
+    <h1>Update Staff Delatils in Respective Text Boxes</h1>
+    
+        <table border="2px">
+            <thead><tr>
+                
+                <th>Staff Name</th>
+                <th>Staff Address</th>
+                <th>Staff Salary</th>
+                <th>Staff Dept</th>
+                <th>Staff Id</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for i in sqldata %}
+            <tr><form action="update" method="post">
+                <td><input type="text" name="name" value="{{i[0]}}"></td>
+                <td><input type="text" name="address" value="{{i[1]}}"></td>
+                <td><input type="number" name ="salary" value="{{i[2]}}"></td>
+                <td><input type="text" name="dept" value="{{i[3]}}"></td>
+                <td><input type="number" name ="s_id" value="{{i[4]}}" disabled></td>
+                <td>
+                    <input type="hidden" name="id" value="{{i[4]}}">
+                    <button type="submit">Update</button></td>
+                </form></tr>
+                    {% endfor %}
+                    </tbody></table>
+        
+        {{msg}}
+        
+</body>
+</html>
